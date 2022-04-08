@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--1) Cadres précédés d'un libéllé "genre nom / prénom"-->
+
+    <form action="destination.php method="post" id="formulaire_contact"> 
+
+        <label for="nom">*Votre nom:</label><input type="text" nom="nom" id="nom">
+    </p>
+        <label for="nom">*Votre prénom:</label><input type="text"nom="nom" id="nom">
+    </p>
+
+<!--2) GOUPE DE CHAMP Légende INTEGREE DANS UN CADRE-->
+
+<P>
+    <fieldset>
+    <legend>Coordonnées</legend>
+    <label for="nom">Nom:</label><input type="text" name="nom" id="?"><br>
+    <label for="?">Email:</label><input type="email" name="email"><br>
+    <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+   </fieldset>
+</P>
+
+           <input type="text" name="nom"> 
+   <input type="text" name="prenom"> 
+   <input type="submit" value="Envoyer">
+       </p> 
+<!--3) Champ avec TAILLE de la CELLULE-->
+
+       <label for="nom">Nom:</label><input type="text" name="nom" id="nom" size="50" maxlength="50" value="Dave LOPER">
+
+
+<!--4) Zones de saisie multi-lignes (ZONE DE TEXTE)-->
+
+<p>
+    <textarea name="commentaire" rows="10" cols="50">Lorem ipsum...</textarea>`
+</p>
+
+      
+<!--5) CASES A COCHER "checkbox" rond "radio" carré-->
+
+      <input type="checkbox" name="couleur1" value="Bleu" checked> Bleu 
+      <input type="checkbox" name="couleur2" value="Rouge"> Rouge 
+      <input type="checkbox" name="couleur3" value="Vert" > Vert
+
+      <p>
+      <input type="radio" name="couleur" value="Bleu"> Bleu 
+      <input type="radio" name="couleur" value="Rouge"> Rouge 
+      <input type="radio" name="couleur" value="Vert" checked> Vert
+    </p>
+
+<!--6) MENUS DÉROULANT : couleur 1) par défaut. 2) choix-->
+<p>
+    <select name="couleur"> 
+        <option>Rouge</option>
+        <option>Bleu</option>
+        <option>Vert</option>
+    </select>   
+</p>
+
+<p><label for="couleur">Choisissez votre couleur</label>
+    <select id="couleur"> 
+        <option value="" selected>-</option>
+        <option value="Bleu">Bleu</option>
+        <option value="Rouge">Rouge</option>
+        <option value="Vert">Vert</option>
+    </select>
+</p>
+
+<p><select id="couleur" size="3"> 
+    <option value="">-</option>
+    <option value="Bleu">Bleu</option>
+    <option value="Rouge">Rouge</option>
+    <option value="Vert">Vert</option>
+    <option value="Jaune">Jaune</option>
+    <option value="Blanc">Blanc</option>
+</select></p>
+
+<!--menu déroulant avec libéllés (métier)-->
+<label for="metiers2">Sélectionnez votre métier</label>
+<input type="text" name="metiers1" id="metiers2" list="metiers3">
+<datalist id="metiers3">
+    <option value="webmaster">
+    <option value="développeur">
+    <option value="administrateur B.D.D.">
+    <option value="webdesigner">
+</datalist>
+
+<!--7) TELECHARGER DOC: BOUTON PARCOURIR-->
+
+<P>
+<form action="destination.php" method="post" enctype="multipart/form-data"> 
+    <input type="file" name="fichier"> 
+    </form>
+</P>
+
+<!--8) VALIDATION DES FORMULAIRES-->
+
+<input type="text" placeholder="Entrez votre nom" pattern="^[a-z]+$" required title="Entrez votre nom (que des caractères entre a et z)">
+
+
+
+
+
+
+
+
+
+
+    </form>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

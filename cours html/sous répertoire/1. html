@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta chartset="utf-8">
+  <title>Ma première page en HTML 5</TITLE>
+</head>
+<body>
+  <h1> Le HTML 5</h1>
+  <h2> quelle galère</h1>
+  <p>Le lanage HTML, c'est fantstique.</p>
+
+<a href="sous répertoire.html" title="1.html">Cliquez ici</a>` 
+
+<img src="1.jpeg">
+
+// Fichier situé à la racine
+<a href="expo.odt" title="l'exposé'">Téléchargez l'exposé(odt)</a>    
+
+// Fichier situé dans un répetoire nommé 'docs' (par exemple)
+<a href="exposé/exposé pdf" title="la notice">Téléchargez la notice (PDF)</a>    
+
+
+
+  </body>
+</html> 

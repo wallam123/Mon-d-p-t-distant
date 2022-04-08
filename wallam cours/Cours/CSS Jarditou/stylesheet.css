@@ -1,0 +1,105 @@
+/* police */
+
+
+html {
+    font-size: 100%;
+}
+h1 {
+    font-size: 2rem;
+ }  
+
+ /* TOUT LE JARDIN */
+
+.entete {
+display:flex;
+}
+
+#img {
+    flex: 1;
+}
+ #jardin {
+flex: 1;
+font-size: 2rem;
+display: flex;
+align-items: center;
+
+}
+
+/* LES LOGOS */
+
+.logo1{
+    width: 30%;
+    height:auto;
+   display: flex;
+   align-items: baseline;
+}
+
+.logo2{
+
+    width: 100%;
+    height: auto;
+    }
+
+/* 1ERS LIENS HYPERTEXTES */
+
+.menu {
+    background-color:black;
+    padding :20px 20px 20px 20px;
+    margin-top: 10pt;
+    margin-bottom:0.5em;
+    font-size: 1rem;
+    text-align: left;
+}
+
+                /* COULEUR DES LIENS HYPERTEXTES */
+a
+{
+    color: white; 
+} 
+    
+
+
+                        /* COLONNES */
+
+
+.colonnes {
+ 
+display: flex;
+}
+
+#col2 {
+    background-color:gray;
+    flex: 1;
+}
+
+
+#col1 {
+
+    flex: 1;
+}
+
+/* EXERCICE RESPONSIVE */
+
+
+@media screen and (max-width: 768px) 
+{ 
+    h1 
+    { 
+        font-size : 1.5rem; 
+    } 
+
+    #col2 {
+
+        display: none;
+
+    }
+}
+
+@media screen and (max-device-width: 768px) 
+{ 
+
+    .menu {
+        display: grid;
+        }
+}
+
